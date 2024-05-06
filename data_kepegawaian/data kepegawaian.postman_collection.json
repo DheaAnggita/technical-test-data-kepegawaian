@@ -1,0 +1,3136 @@
+{
+	"info": {
+		"_postman_id": "08985d75-dd46-48ba-8c13-6943ff73b2d5",
+		"name": "data kepegawaian",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22179931"
+	},
+	"item": [
+		{
+			"name": "Employess",
+			"item": [
+				{
+					"name": "createEmployee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nik\": \"123456789\",\r\n    \"name\": \"John Doe\",\r\n    \"is_active\": true,\r\n    \"start_date\": \"2024-05-01\",\r\n    \"end_date\": \"2024-12-31\",\r\n    \"created_by\": \"admin\",\r\n    \"employeeProfile\": {\r\n        \"place_of_birth\": \"Jakarta\",\r\n        \"date_of_birth\": \"1990-01-01\",\r\n        \"gender\": \"Laki-Laki\",\r\n        \"is_married\": true,\r\n        \"prof_pict\": \"\"\r\n    },\r\n    \"employeeFamily\": [\r\n        {\r\n            \"name\": \"Jane Doe\",\r\n            \"identifier\": \"12345\",\r\n            \"job\": \"Pelajar\",\r\n            \"place_of_birth\": \"Denpasar\",\r\n            \"date_of_birth\": \"1995-10-17\",\r\n            \"religion\": \"Islam\",\r\n            \"is_life\": true,\r\n            \"is_divorced\": false,\r\n            \"relation_status\": \"Istri\"\r\n        },\r\n        {\r\n            \"name\": \"June Doe\",\r\n            \"identifier\": \"123456\",\r\n            \"job\": \"Pelajar\",\r\n            \"place_of_birth\": \"Denpasar\",\r\n            \"date_of_birth\": \"2012-10-17\",\r\n            \"religion\": \"Islam\",\r\n            \"is_life\": true,\r\n            \"is_divorced\": false,\r\n            \"relation_status\": \"Anak\"\r\n        }\r\n    ],\r\n    \"education\": [\r\n        {\r\n            \"name\": \"University of Example\",\r\n            \"level\": \"Strata 1\",\r\n            \"description\": \"Bachelor's degree in Computer Science\"\r\n        },\r\n        {\r\n            \"name\": \"University of Example2\",\r\n            \"level\": \"Strata 1\",\r\n            \"description\": \"Bachelor's degree in Computer Science\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/employees",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nik\": \"123456789\",\r\n    \"name\": \"John Doe\",\r\n    \"is_active\": true,\r\n    \"start_date\": \"2024-05-01\",\r\n    \"end_date\": \"2024-12-31\",\r\n    \"created_by\": \"admin\",\r\n    \"employeeProfile\": {\r\n        \"place_of_birth\": \"Jakarta\",\r\n        \"date_of_birth\": \"1990-01-01\",\r\n        \"gender\": \"Laki-Laki\",\r\n        \"is_married\": true,\r\n        \"prof_pict\": \"\"\r\n    },\r\n    \"employeeFamily\": [\r\n        {\r\n            \"name\": \"Jane Doe\",\r\n            \"identifier\": \"12345\",\r\n            \"job\": \"Pelajar\",\r\n            \"place_of_birth\": \"Denpasar\",\r\n            \"date_of_birth\": \"1995-10-17\",\r\n            \"religion\": \"Islam\",\r\n            \"is_life\": true,\r\n            \"is_divorced\": false,\r\n            \"relation_status\": \"Istri\"\r\n        },\r\n        {\r\n            \"name\": \"June Doe\",\r\n            \"identifier\": \"123456\",\r\n            \"job\": \"Pelajar\",\r\n            \"place_of_birth\": \"Denpasar\",\r\n            \"date_of_birth\": \"2012-10-17\",\r\n            \"religion\": \"Islam\",\r\n            \"is_life\": true,\r\n            \"is_divorced\": false,\r\n            \"relation_status\": \"Anak\"\r\n        }\r\n    ],\r\n    \"education\": [\r\n        {\r\n            \"name\": \"University of Example\",\r\n            \"level\": \"Strata 1\",\r\n            \"description\": \"Bachelor's degree in Computer Science\"\r\n        },\r\n        {\r\n            \"name\": \"University of Example2\",\r\n            \"level\": \"Strata 1\",\r\n            \"description\": \"Bachelor's degree in Computer Science\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/employees",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"employees"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "321"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"141-BjSogW0lh2aWxSJr0kOf7iSsQvw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 May 2024 23:21:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 201,\n    \"message\": \"Employee created successfully\",\n    \"data\": {\n        \"id\": 22,\n        \"nik\": \"123456789\",\n        \"name\": \"John Doe\",\n        \"is_active\": true,\n        \"start_date\": \"2024-05-01T00:00:00.000Z\",\n        \"end_date\": \"2024-12-31T00:00:00.000Z\",\n        \"created_by\": \"admin\",\n        \"updated_at\": \"2024-05-05T23:21:58.051Z\",\n        \"created_at\": \"2024-05-05T23:21:58.051Z\",\n        \"updated_by\": null\n    }\n}"
+						},
+						{
+							"name": "Failed",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nik\": \"123456789\",\r\n    \"name\": \"John Doe\",\r\n    \"is_active\": true,\r\n    \"start_date\": \"2024-05-01\",\r\n    \"end_date\": \"2024-12-31\",\r\n    \"created_by\": \"admin\",\r\n    \"employeeProfile\": {\r\n        \"place_of_birth\": \"Jakarta\",\r\n        \"date_of_birth\": \"1990-01-01\",\r\n        \"gender\": \"Laki-Lakii\",\r\n        \"is_married\": true,\r\n        \"prof_pict\": \"\"\r\n    },\r\n    \"employeeFamily\": [\r\n        {\r\n            \"name\": \"Jane Doe\",\r\n            \"identifier\": \"12345\",\r\n            \"job\": \"Pelajar\",\r\n            \"place_of_birth\": \"Denpasar\",\r\n            \"date_of_birth\": \"1995-10-17\",\r\n            \"religion\": \"Islam\",\r\n            \"is_life\": true,\r\n            \"is_divorced\": false,\r\n            \"relation_status\": \"Istri\"\r\n        },\r\n        {\r\n            \"name\": \"June Doe\",\r\n            \"identifier\": \"123456\",\r\n            \"job\": \"Pelajar\",\r\n            \"place_of_birth\": \"Denpasar\",\r\n            \"date_of_birth\": \"2012-10-17\",\r\n            \"religion\": \"Islam\",\r\n            \"is_life\": true,\r\n            \"is_divorced\": false,\r\n            \"relation_status\": \"Anak\"\r\n        }\r\n    ],\r\n    \"education\": [\r\n        {\r\n            \"name\": \"University of Example\",\r\n            \"level\": \"Strata 1\",\r\n            \"description\": \"Bachelor's degree in Computer Science\"\r\n        },\r\n        {\r\n            \"name\": \"University of Example2\",\r\n            \"level\": \"Strata 1\",\r\n            \"description\": \"Bachelor's degree in Computer Science\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/employees",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"employees"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "104"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"68-3kiRqKcpdAyvytnVw5EIg9/5PXc\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 May 2024 23:22:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 400,\n    \"message\": \"Invalid gender for employee profile. Must be Laki-Laki or Perempuan\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "getAllEmployees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/employees",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/employees",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"employees"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "6330"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"18ba-UXVhdLOPpiwzFGRyebzIM/D+S+Q\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 May 2024 23:22:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"Get Employees Success\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"nik\": \"11012\",\n            \"name\": \"Budi\",\n            \"is_active\": true,\n            \"start_date\": \"2022-12-11T17:00:00.000Z\",\n            \"end_date\": \"2029-12-11T17:00:00.000Z\",\n            \"created_by\": null,\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-04T15:04:44.220Z\",\n            \"updated_at\": \"2024-05-04T15:04:44.220Z\",\n            \"EmployeeProfile\": {\n                \"id\": 1,\n                \"employee_id\": 1,\n                \"place_of_birth\": \"Jakarta\",\n                \"date_of_birth\": \"1997-05-01T17:00:00.000Z\",\n                \"gender\": \"Perempuan\",\n                \"is_married\": true,\n                \"prof_pict\": \"admin\",\n                \"created_by\": \"admin\",\n                \"updated_by\": \"admin\",\n                \"created_at\": \"2022-12-11T17:00:00.000Z\",\n                \"updated_at\": \"2022-12-11T17:00:00.000Z\"\n            },\n            \"EmployeeFamilies\": [\n                {\n                    \"id\": 3,\n                    \"employee_id\": 1,\n                    \"name\": \"Stephanie\",\n                    \"identifier\": \"32100594109020005\",\n                    \"job\": \"Pelajar\",\n                    \"place_of_birth\": \"Bangkalan\",\n                    \"date_of_birth\": \"2008-10-16T17:00:00.000Z\",\n                    \"religion\": \"Islam\",\n                    \"is_life\": true,\n                    \"is_divorced\": false,\n                    \"relation_status\": \"Anak\",\n                    \"created_by\": \"admin\",\n                    \"updated_by\": \"admin\",\n                    \"created_at\": \"2022-12-11T17:00:00.000Z\",\n                    \"updated_at\": \"2022-12-11T17:00:00.000Z\"\n                },\n                {\n                    \"id\": 2,\n                    \"employee_id\": 1,\n                    \"name\": \"Clara\",\n                    \"identifier\": \"32100594109020004\",\n                    \"job\": \"Pelajar\",\n                    \"place_of_birth\": \"Bangkalan\",\n                    \"date_of_birth\": \"2008-10-16T17:00:00.000Z\",\n                    \"religion\": \"Islam\",\n                    \"is_life\": true,\n                    \"is_divorced\": false,\n                    \"relation_status\": \"Anak\",\n                    \"created_by\": \"admin\",\n                    \"updated_by\": \"admin\",\n                    \"created_at\": \"2022-12-11T17:00:00.000Z\",\n                    \"updated_at\": \"2022-12-11T17:00:00.000Z\"\n                },\n                {\n                    \"id\": 1,\n                    \"employee_id\": 1,\n                    \"name\": \"Marni\",\n                    \"identifier\": \"32100594109960002\",\n                    \"job\": \"Ibu Rumah Tangga\",\n                    \"place_of_birth\": \"Denpasar\",\n                    \"date_of_birth\": \"1995-10-16T17:00:00.000Z\",\n                    \"religion\": \"Islam\",\n                    \"is_life\": true,\n                    \"is_divorced\": false,\n                    \"relation_status\": \"Istri\",\n                    \"created_by\": \"admin\",\n                    \"updated_by\": \"admin\",\n                    \"created_at\": \"2022-12-11T17:00:00.000Z\",\n                    \"updated_at\": \"2022-12-11T17:00:00.000Z\"\n                }\n            ],\n            \"Education\": [\n                {\n                    \"id\": 1,\n                    \"employee_id\": 1,\n                    \"name\": \"SMKN 7 Jakartaa\",\n                    \"level\": \"Sma\",\n                    \"description\": \"Sekolah Menengah Atas\",\n                    \"created_by\": \"admin\",\n                    \"updated_by\": \"admin\",\n                    \"created_at\": \"2022-12-11T17:00:00.000Z\",\n                    \"updated_at\": \"2024-05-05T18:55:21.777Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 2,\n            \"nik\": \"11013\",\n            \"name\": \"Jarot\",\n            \"is_active\": true,\n            \"start_date\": \"2021-08-31T17:00:00.000Z\",\n            \"end_date\": \"2028-08-31T17:00:00.000Z\",\n            \"created_by\": null,\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-04T15:04:44.220Z\",\n            \"updated_at\": \"2024-05-04T15:04:44.220Z\",\n            \"EmployeeProfile\": {\n                \"id\": 2,\n                \"employee_id\": 2,\n                \"place_of_birth\": \"Sukabumi\",\n                \"date_of_birth\": \"1996-05-01T17:00:00.000Z\",\n                \"gender\": \"Perempuan\",\n                \"is_married\": false,\n                \"prof_pict\": \"admin\",\n                \"created_by\": \"admin\",\n                \"updated_by\": \"admin\",\n                \"created_at\": \"2022-12-11T17:00:00.000Z\",\n                \"updated_at\": \"2022-12-11T17:00:00.000Z\"\n            },\n            \"EmployeeFamilies\": [],\n            \"Education\": [\n                {\n                    \"id\": 2,\n                    \"employee_id\": 2,\n                    \"name\": \"Universitas Negeri Jakarta\",\n                    \"level\": \"Strata 1\",\n                    \"description\": \"Sarjana\",\n                    \"created_by\": \"admin\",\n                    \"updated_by\": \"admin\",\n                    \"created_at\": \"2022-12-11T17:00:00.000Z\",\n                    \"updated_at\": \"2022-12-11T17:00:00.000Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 22,\n            \"nik\": \"123456789\",\n            \"name\": \"John Doe\",\n            \"is_active\": true,\n            \"start_date\": \"2024-05-01T00:00:00.000Z\",\n            \"end_date\": \"2024-12-31T00:00:00.000Z\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-05T23:21:58.051Z\",\n            \"updated_at\": \"2024-05-05T23:21:58.051Z\",\n            \"EmployeeProfile\": {\n                \"id\": 18,\n                \"employee_id\": 22,\n                \"place_of_birth\": \"Jakarta\",\n                \"date_of_birth\": \"1990-01-01T00:00:00.000Z\",\n                \"gender\": \"Laki-Laki\",\n                \"is_married\": true,\n                \"prof_pict\": \"\",\n                \"created_by\": \"admin\",\n                \"updated_by\": null,\n                \"created_at\": \"2024-05-05T23:21:58.400Z\",\n                \"updated_at\": \"2024-05-05T23:21:58.400Z\"\n            },\n            \"EmployeeFamilies\": [\n                {\n                    \"id\": 20,\n                    \"employee_id\": 22,\n                    \"name\": \"June Doe\",\n                    \"identifier\": \"123456\",\n                    \"job\": \"Pelajar\",\n                    \"place_of_birth\": \"Denpasar\",\n                    \"date_of_birth\": \"2012-10-17T00:00:00.000Z\",\n                    \"religion\": \"Islam\",\n                    \"is_life\": true,\n                    \"is_divorced\": false,\n                    \"relation_status\": \"Anak\",\n                    \"created_by\": \"admin\",\n                    \"updated_by\": null,\n                    \"created_at\": \"2024-05-05T23:21:58.417Z\",\n                    \"updated_at\": \"2024-05-05T23:21:58.417Z\"\n                },\n                {\n                    \"id\": 19,\n                    \"employee_id\": 22,\n                    \"name\": \"Jane Doe\",\n                    \"identifier\": \"12345\",\n                    \"job\": \"Pelajar\",\n                    \"place_of_birth\": \"Denpasar\",\n                    \"date_of_birth\": \"1995-10-17T00:00:00.000Z\",\n                    \"religion\": \"Islam\",\n                    \"is_life\": true,\n                    \"is_divorced\": false,\n                    \"relation_status\": \"Istri\",\n                    \"created_by\": \"admin\",\n                    \"updated_by\": null,\n                    \"created_at\": \"2024-05-05T23:21:58.407Z\",\n                    \"updated_at\": \"2024-05-05T23:21:58.407Z\"\n                }\n            ],\n            \"Education\": [\n                {\n                    \"id\": 18,\n                    \"employee_id\": 22,\n                    \"name\": \"University of Example2\",\n                    \"level\": \"Strata 1\",\n                    \"description\": \"Bachelor's degree in Computer Science\",\n                    \"created_by\": \"admin\",\n                    \"updated_by\": \"\",\n                    \"created_at\": \"2024-05-05T23:21:58.432Z\",\n                    \"updated_at\": \"2024-05-05T23:21:58.432Z\"\n                },\n                {\n                    \"id\": 17,\n                    \"employee_id\": 22,\n                    \"name\": \"University of Example\",\n                    \"level\": \"Strata 1\",\n                    \"description\": \"Bachelor's degree in Computer Science\",\n                    \"created_by\": \"admin\",\n                    \"updated_by\": \"\",\n                    \"created_at\": \"2024-05-05T23:21:58.428Z\",\n                    \"updated_at\": \"2024-05-05T23:21:58.428Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 23,\n            \"nik\": \"123456789\",\n            \"name\": \"John Doe\",\n            \"is_active\": true,\n            \"start_date\": \"2024-05-01T00:00:00.000Z\",\n            \"end_date\": \"2024-12-31T00:00:00.000Z\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-05T23:22:52.858Z\",\n            \"updated_at\": \"2024-05-05T23:22:52.858Z\",\n            \"EmployeeProfile\": {\n                \"id\": 19,\n                \"employee_id\": 23,\n                \"place_of_birth\": \"Jakarta\",\n                \"date_of_birth\": \"1990-01-01T00:00:00.000Z\",\n                \"gender\": \"Laki-Laki\",\n                \"is_married\": true,\n                \"prof_pict\": \"\",\n                \"created_by\": \"admin\",\n                \"updated_by\": null,\n                \"created_at\": \"2024-05-05T23:22:52.985Z\",\n                \"updated_at\": \"2024-05-05T23:22:52.985Z\"\n            },\n            \"EmployeeFamilies\": [\n                {\n                    \"id\": 22,\n                    \"employee_id\": 23,\n                    \"name\": \"June Doe\",\n                    \"identifier\": \"123456\",\n                    \"job\": \"Pelajar\",\n                    \"place_of_birth\": \"Denpasar\",\n                    \"date_of_birth\": \"2012-10-17T00:00:00.000Z\",\n                    \"religion\": \"Islam\",\n                    \"is_life\": true,\n                    \"is_divorced\": false,\n                    \"relation_status\": \"Anak\",\n                    \"created_by\": \"admin\",\n                    \"updated_by\": null,\n                    \"created_at\": \"2024-05-05T23:22:52.998Z\",\n                    \"updated_at\": \"2024-05-05T23:22:52.998Z\"\n                },\n                {\n                    \"id\": 21,\n                    \"employee_id\": 23,\n                    \"name\": \"Jane Doe\",\n                    \"identifier\": \"12345\",\n                    \"job\": \"Pelajar\",\n                    \"place_of_birth\": \"Denpasar\",\n                    \"date_of_birth\": \"1995-10-17T00:00:00.000Z\",\n                    \"religion\": \"Islam\",\n                    \"is_life\": true,\n                    \"is_divorced\": false,\n                    \"relation_status\": \"Istri\",\n                    \"created_by\": \"admin\",\n                    \"updated_by\": null,\n                    \"created_at\": \"2024-05-05T23:22:52.990Z\",\n                    \"updated_at\": \"2024-05-05T23:22:52.990Z\"\n                }\n            ],\n            \"Education\": [\n                {\n                    \"id\": 20,\n                    \"employee_id\": 23,\n                    \"name\": \"University of Example2\",\n                    \"level\": \"Strata 1\",\n                    \"description\": \"Bachelor's degree in Computer Science\",\n                    \"created_by\": \"admin\",\n                    \"updated_by\": \"\",\n                    \"created_at\": \"2024-05-05T23:22:53.011Z\",\n                    \"updated_at\": \"2024-05-05T23:22:53.011Z\"\n                },\n                {\n                    \"id\": 19,\n                    \"employee_id\": 23,\n                    \"name\": \"University of Example\",\n                    \"level\": \"Strata 1\",\n                    \"description\": \"Bachelor's degree in Computer Science\",\n                    \"created_by\": \"admin\",\n                    \"updated_by\": \"\",\n                    \"created_at\": \"2024-05-05T23:22:53.005Z\",\n                    \"updated_at\": \"2024-05-05T23:22:53.005Z\"\n                }\n            ]\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "getEmployeeById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/employees/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employees",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/employees/1",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"employees",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1952"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7a0-oBOW4afgl/+3+2MUkKFBJV/UTzM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 May 2024 23:23:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"Get Employee Success\",\n    \"data\": {\n        \"id\": 1,\n        \"nik\": \"11012\",\n        \"name\": \"Budi\",\n        \"is_active\": true,\n        \"start_date\": \"2022-12-11T17:00:00.000Z\",\n        \"end_date\": \"2029-12-11T17:00:00.000Z\",\n        \"created_by\": null,\n        \"updated_by\": null,\n        \"created_at\": \"2024-05-04T15:04:44.220Z\",\n        \"updated_at\": \"2024-05-04T15:04:44.220Z\",\n        \"EmployeeProfile\": {\n            \"id\": 1,\n            \"employee_id\": 1,\n            \"place_of_birth\": \"Jakarta\",\n            \"date_of_birth\": \"1997-05-01T17:00:00.000Z\",\n            \"gender\": \"Perempuan\",\n            \"is_married\": true,\n            \"prof_pict\": \"admin\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\",\n            \"created_at\": \"2022-12-11T17:00:00.000Z\",\n            \"updated_at\": \"2022-12-11T17:00:00.000Z\"\n        },\n        \"EmployeeFamilies\": [\n            {\n                \"id\": 1,\n                \"employee_id\": 1,\n                \"name\": \"Marni\",\n                \"identifier\": \"32100594109960002\",\n                \"job\": \"Ibu Rumah Tangga\",\n                \"place_of_birth\": \"Denpasar\",\n                \"date_of_birth\": \"1995-10-16T17:00:00.000Z\",\n                \"religion\": \"Islam\",\n                \"is_life\": true,\n                \"is_divorced\": false,\n                \"relation_status\": \"Istri\",\n                \"created_by\": \"admin\",\n                \"updated_by\": \"admin\",\n                \"created_at\": \"2022-12-11T17:00:00.000Z\",\n                \"updated_at\": \"2022-12-11T17:00:00.000Z\"\n            },\n            {\n                \"id\": 2,\n                \"employee_id\": 1,\n                \"name\": \"Clara\",\n                \"identifier\": \"32100594109020004\",\n                \"job\": \"Pelajar\",\n                \"place_of_birth\": \"Bangkalan\",\n                \"date_of_birth\": \"2008-10-16T17:00:00.000Z\",\n                \"religion\": \"Islam\",\n                \"is_life\": true,\n                \"is_divorced\": false,\n                \"relation_status\": \"Anak\",\n                \"created_by\": \"admin\",\n                \"updated_by\": \"admin\",\n                \"created_at\": \"2022-12-11T17:00:00.000Z\",\n                \"updated_at\": \"2022-12-11T17:00:00.000Z\"\n            },\n            {\n                \"id\": 3,\n                \"employee_id\": 1,\n                \"name\": \"Stephanie\",\n                \"identifier\": \"32100594109020005\",\n                \"job\": \"Pelajar\",\n                \"place_of_birth\": \"Bangkalan\",\n                \"date_of_birth\": \"2008-10-16T17:00:00.000Z\",\n                \"religion\": \"Islam\",\n                \"is_life\": true,\n                \"is_divorced\": false,\n                \"relation_status\": \"Anak\",\n                \"created_by\": \"admin\",\n                \"updated_by\": \"admin\",\n                \"created_at\": \"2022-12-11T17:00:00.000Z\",\n                \"updated_at\": \"2022-12-11T17:00:00.000Z\"\n            }\n        ],\n        \"Education\": [\n            {\n                \"id\": 1,\n                \"employee_id\": 1,\n                \"name\": \"SMKN 7 Jakartaa\",\n                \"level\": \"Sma\",\n                \"description\": \"Sekolah Menengah Atas\",\n                \"created_by\": \"admin\",\n                \"updated_by\": \"admin\",\n                \"created_at\": \"2022-12-11T17:00:00.000Z\",\n                \"updated_at\": \"2024-05-05T18:55:21.777Z\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "getEmployeeReport",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/employeesreport",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employeesreport"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Not Finished",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/employeesreport",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"employeesreport"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "481"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1e1-2ghrVMu4C8kkjRc402WHHXXKLYc\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 May 2024 23:23:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"Employee Report Retrieved Successfully\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"nik\": \"11012\",\n            \"name\": \"Budi\",\n            \"is_active\": true,\n            \"age\": \"NaN Years Old\",\n            \"family_data\": \"Anak, Anak\"\n        },\n        {\n            \"id\": 2,\n            \"nik\": \"11013\",\n            \"name\": \"Jarot\",\n            \"is_active\": true,\n            \"age\": \"NaN Years Old\",\n            \"family_data\": \"\"\n        },\n        {\n            \"id\": 22,\n            \"nik\": \"123456789\",\n            \"name\": \"John Doe\",\n            \"is_active\": true,\n            \"age\": \"NaN Years Old\",\n            \"family_data\": \"Anak\"\n        },\n        {\n            \"id\": 23,\n            \"nik\": \"123456789\",\n            \"name\": \"John Doe\",\n            \"is_active\": true,\n            \"age\": \"NaN Years Old\",\n            \"family_data\": \"Anak\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "updateEmployee",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nik\": \"1234567890\",\r\n    \"name\": \"John Doe\",\r\n    \"is_active\": true,\r\n    \"start_date\": \"2024-05-01\",\r\n    \"end_date\": \"2024-12-31\",\r\n    \"updated_by\": \"admin\",\r\n    \"employeeProfile\": {\r\n        \"id\": 18,\r\n        \"place_of_birth\": \"Jakarta\",\r\n        \"date_of_birth\": \"1990-01-01\",\r\n        \"gender\": \"Laki-Laki\",\r\n        \"is_married\": true,\r\n        \"prof_pict\": \"\"\r\n    },\r\n    \"employeeFamily\": [\r\n        {\r\n            \"id\": 19,\r\n            \"name\": \"Jane Doee\",\r\n            \"identifier\": \"12345\",\r\n            \"job\": \"Pelajar\",\r\n            \"place_of_birth\": \"Denpasar\",\r\n            \"date_of_birth\": \"1995-10-17\",\r\n            \"religion\": \"Islam\",\r\n            \"is_life\": true,\r\n            \"is_divorced\": false,\r\n            \"relation_status\": \"Istri\"\r\n        },\r\n        {\r\n            \"id\": 20,\r\n            \"name\": \"June Doee\",\r\n            \"identifier\": \"123456\",\r\n            \"job\": \"Pelajar\",\r\n            \"place_of_birth\": \"Denpasar\",\r\n            \"date_of_birth\": \"2012-10-17\",\r\n            \"religion\": \"Islam\",\r\n            \"is_life\": true,\r\n            \"is_divorced\": false,\r\n            \"relation_status\": \"Anak\"\r\n        }\r\n    ],\r\n    \"education\": [\r\n        {\r\n            \"id\": 17,\r\n            \"name\": \"University of Examplee\",\r\n            \"level\": \"Strata 1\",\r\n            \"description\": \"Bachelor's degree in Computer Science\"\r\n        },\r\n        {\r\n            \"id\": 18,\r\n            \"name\": \"University of Examplee2\",\r\n            \"level\": \"Strata 1\",\r\n            \"description\": \"Bachelor's degree in Computer Science\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/employees/22",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employees",
+								"22"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "employee not found",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nik\": \"1234567890\",\r\n    \"name\": \"John Doe\",\r\n    \"is_active\": true,\r\n    \"start_date\": \"2024-05-01\",\r\n    \"end_date\": \"2024-12-31\",\r\n    \"updated_by\": \"admin\",\r\n    \"employeeProfile\": {\r\n        \"id\": 17,\r\n        \"place_of_birth\": \"Jakarta\",\r\n        \"date_of_birth\": \"1990-01-01\",\r\n        \"gender\": \"Laki-Laki\",\r\n        \"is_married\": true,\r\n        \"prof_pict\": \"\"\r\n    },\r\n    \"employeeFamily\": [\r\n        {\r\n            \"id\": 17,\r\n            \"name\": \"Jane Doee\",\r\n            \"identifier\": \"12345\",\r\n            \"job\": \"Pelajar\",\r\n            \"place_of_birth\": \"Denpasar\",\r\n            \"date_of_birth\": \"1995-10-17\",\r\n            \"religion\": \"Islam\",\r\n            \"is_life\": true,\r\n            \"is_divorced\": false,\r\n            \"relation_status\": \"Istri\"\r\n        },\r\n        {\r\n            \"id\": 18,\r\n            \"name\": \"June Doee\",\r\n            \"identifier\": \"123456\",\r\n            \"job\": \"Pelajar\",\r\n            \"place_of_birth\": \"Denpasar\",\r\n            \"date_of_birth\": \"2012-10-17\",\r\n            \"religion\": \"Islam\",\r\n            \"is_life\": true,\r\n            \"is_divorced\": false,\r\n            \"relation_status\": \"Anak\"\r\n        }\r\n    ],\r\n    \"education\": [\r\n        {\r\n            \"id\": 15,\r\n            \"name\": \"University of Examplee\",\r\n            \"level\": \"Strata 1\",\r\n            \"description\": \"Bachelor's degree in Computer Science\"\r\n        },\r\n        {\r\n            \"id\": 16,\r\n            \"name\": \"University of Examplee2\",\r\n            \"level\": \"Strata 1\",\r\n            \"description\": \"Bachelor's degree in Computer Science\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/employees/4",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"employees",
+										"4"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "55"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"37-AVMmhiYMwfVs0lVK1FIrLBGpeTw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 May 2024 23:24:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 404,\n    \"message\": \"Employee not found\",\n    \"data\": null\n}"
+						},
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nik\": \"1234567890\",\r\n    \"name\": \"John Doe\",\r\n    \"is_active\": true,\r\n    \"start_date\": \"2024-05-01\",\r\n    \"end_date\": \"2024-12-31\",\r\n    \"updated_by\": \"admin\",\r\n    \"employeeProfile\": {\r\n        \"id\": 18,\r\n        \"place_of_birth\": \"Jakarta\",\r\n        \"date_of_birth\": \"1990-01-01\",\r\n        \"gender\": \"Laki-Laki\",\r\n        \"is_married\": true,\r\n        \"prof_pict\": \"\"\r\n    },\r\n    \"employeeFamily\": [\r\n        {\r\n            \"id\": 19,\r\n            \"name\": \"Jane Doee\",\r\n            \"identifier\": \"12345\",\r\n            \"job\": \"Pelajar\",\r\n            \"place_of_birth\": \"Denpasar\",\r\n            \"date_of_birth\": \"1995-10-17\",\r\n            \"religion\": \"Islam\",\r\n            \"is_life\": true,\r\n            \"is_divorced\": false,\r\n            \"relation_status\": \"Istri\"\r\n        },\r\n        {\r\n            \"id\": 20,\r\n            \"name\": \"June Doee\",\r\n            \"identifier\": \"123456\",\r\n            \"job\": \"Pelajar\",\r\n            \"place_of_birth\": \"Denpasar\",\r\n            \"date_of_birth\": \"2012-10-17\",\r\n            \"religion\": \"Islam\",\r\n            \"is_life\": true,\r\n            \"is_divorced\": false,\r\n            \"relation_status\": \"Anak\"\r\n        }\r\n    ],\r\n    \"education\": [\r\n        {\r\n            \"id\": 17,\r\n            \"name\": \"University of Examplee\",\r\n            \"level\": \"Strata 1\",\r\n            \"description\": \"Bachelor's degree in Computer Science\"\r\n        },\r\n        {\r\n            \"id\": 18,\r\n            \"name\": \"University of Examplee2\",\r\n            \"level\": \"Strata 1\",\r\n            \"description\": \"Bachelor's degree in Computer Science\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/employees/22",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"employees",
+										"22"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "325"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"145-JCPgVieW2mQC9gFlQXE1ed7Y8yA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 May 2024 23:26:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 201,\n    \"message\": \"Employee updated successfully\",\n    \"data\": {\n        \"id\": 22,\n        \"nik\": \"1234567890\",\n        \"name\": \"John Doe\",\n        \"is_active\": true,\n        \"start_date\": \"2024-05-01T00:00:00.000Z\",\n        \"end_date\": \"2024-12-31T00:00:00.000Z\",\n        \"created_by\": \"admin\",\n        \"updated_by\": \"admin\",\n        \"created_at\": \"2024-05-05T23:21:58.051Z\",\n        \"updated_at\": \"2024-05-05T23:26:22.629Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteEmployee",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/employees/23",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employees",
+								"23"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/employees/23",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"employees",
+										"23"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "66"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"42-R+9Zs1m0KhNUTL6tSDPB2IAaRF0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 May 2024 23:26:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"Employee deleted successfully\",\n    \"data\": null\n}"
+						},
+						{
+							"name": "not found",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/employees/230",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"employees",
+										"230"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "55"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"37-AVMmhiYMwfVs0lVK1FIrLBGpeTw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 May 2024 23:27:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 404,\n    \"message\": \"Employee not found\",\n    \"data\": null\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Education",
+			"item": [
+				{
+					"name": "createEducation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employee_id\": \"22\",\r\n    \"name\": \"SMAN 1 Yogyakarta\",\r\n    \"level\": \"Sma\",\r\n    \"description\": \"SMAN 1 Yogyakarta\",\r\n    \"created_by\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/education",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"education"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "employee not found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"employee_id\": \"23\",\r\n    \"name\": \"SMAN 1 Yogyakarta\",\r\n    \"level\": \"Sma\",\r\n    \"description\": \"SMAN 1 Yogyakarta\",\r\n    \"created_by\": \"admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/education",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"education"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "55"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"37-AVMmhiYMwfVs0lVK1FIrLBGpeTw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 May 2024 23:30:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 404,\n    \"message\": \"Employee not found\",\n    \"data\": null\n}"
+						},
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"employee_id\": \"22\",\r\n    \"name\": \"SMAN 1 Yogyakarta\",\r\n    \"level\": \"Sma\",\r\n    \"description\": \"SMAN 1 Yogyakarta\",\r\n    \"created_by\": \"admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/education",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"education"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "65"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"41-MbBF/aZmOmmfiNtSzKmgj2JXJnA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 May 2024 23:33:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 201,\n    \"message\": \"Education created successfully\",\n    \"data\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "getAllEducation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/education?employee_id=100",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"education"
+							],
+							"query": [
+								{
+									"key": "employee_id",
+									"value": "100"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get by employee_id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/education?employee_id=1",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"education"
+									],
+									"query": [
+										{
+											"key": "employee_id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "279"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"117-3K+UDvQNilnLl30wVP7OCSboFMk\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 May 2024 23:33:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"Get Education Success\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"employee_id\": 1,\n            \"name\": \"SMKN 7 Jakartaa\",\n            \"level\": \"Sma\",\n            \"description\": \"Sekolah Menengah Atas\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\",\n            \"created_at\": \"2022-12-11T17:00:00.000Z\",\n            \"updated_at\": \"2024-05-05T18:55:21.777Z\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "getAll",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/education",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"education"
+									],
+									"query": [
+										{
+											"key": "employee_id",
+											"value": "1",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "3475"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d93-piPB5rIi2f2XaTqLCfkpGM6ywTo\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 May 2024 23:34:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"Get Education Success\",\n    \"data\": [\n        {\n            \"id\": 2,\n            \"employee_id\": 2,\n            \"name\": \"Universitas Negeri Jakarta\",\n            \"level\": \"Strata 1\",\n            \"description\": \"Sarjana\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\",\n            \"created_at\": \"2022-12-11T17:00:00.000Z\",\n            \"updated_at\": \"2022-12-11T17:00:00.000Z\"\n        },\n        {\n            \"id\": 3,\n            \"employee_id\": 13,\n            \"name\": \"University of Example\",\n            \"level\": \"Strata 1\",\n            \"description\": \"Bachelor's degree in Computer Science\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"\",\n            \"created_at\": \"2024-05-05T17:30:57.017Z\",\n            \"updated_at\": \"2024-05-05T17:30:57.017Z\"\n        },\n        {\n            \"id\": 5,\n            \"employee_id\": 16,\n            \"name\": \"University of Example\",\n            \"level\": \"Strata 1\",\n            \"description\": \"Bachelor's degree in Computer Science\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"\",\n            \"created_at\": \"2024-05-05T17:35:17.663Z\",\n            \"updated_at\": \"2024-05-05T17:35:17.663Z\"\n        },\n        {\n            \"id\": 6,\n            \"employee_id\": 16,\n            \"name\": \"University of Example2\",\n            \"level\": \"Strata 1\",\n            \"description\": \"Bachelor's degree in Computer Science\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"\",\n            \"created_at\": \"2024-05-05T17:35:17.669Z\",\n            \"updated_at\": \"2024-05-05T17:35:17.669Z\"\n        },\n        {\n            \"id\": 7,\n            \"employee_id\": 17,\n            \"name\": \"University of Example\",\n            \"level\": \"Strata 1\",\n            \"description\": \"Bachelor's degree in Computer Science\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"\",\n            \"created_at\": \"2024-05-05T17:39:55.022Z\",\n            \"updated_at\": \"2024-05-05T17:39:55.022Z\"\n        },\n        {\n            \"id\": 8,\n            \"employee_id\": 17,\n            \"name\": \"University of Example2\",\n            \"level\": \"Strata 1\",\n            \"description\": \"Bachelor's degree in Computer Science\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"\",\n            \"created_at\": \"2024-05-05T17:39:55.027Z\",\n            \"updated_at\": \"2024-05-05T17:39:55.027Z\"\n        },\n        {\n            \"id\": 9,\n            \"employee_id\": 18,\n            \"name\": \"University of Example\",\n            \"level\": \"Strata 1\",\n            \"description\": \"Bachelor's degree in Computer Science\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"\",\n            \"created_at\": \"2024-05-05T17:49:48.931Z\",\n            \"updated_at\": \"2024-05-05T17:49:48.931Z\"\n        },\n        {\n            \"id\": 10,\n            \"employee_id\": 18,\n            \"name\": \"University of Example2\",\n            \"level\": \"Strata 1\",\n            \"description\": \"Bachelor's degree in Computer Science\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"\",\n            \"created_at\": \"2024-05-05T17:49:48.938Z\",\n            \"updated_at\": \"2024-05-05T17:49:48.938Z\"\n        },\n        {\n            \"id\": 1,\n            \"employee_id\": 1,\n            \"name\": \"SMKN 7 Jakartaa\",\n            \"level\": \"Sma\",\n            \"description\": \"Sekolah Menengah Atas\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\",\n            \"created_at\": \"2022-12-11T17:00:00.000Z\",\n            \"updated_at\": \"2024-05-05T18:55:21.777Z\"\n        },\n        {\n            \"id\": 15,\n            \"employee_id\": 21,\n            \"name\": \"University of Examplee\",\n            \"level\": \"Strata 1\",\n            \"description\": \"Bachelor's degree in Computer Science\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\",\n            \"created_at\": \"2024-05-05T20:34:40.760Z\",\n            \"updated_at\": \"2024-05-05T21:35:31.647Z\"\n        },\n        {\n            \"id\": 16,\n            \"employee_id\": 21,\n            \"name\": \"University of Examplee2\",\n            \"level\": \"Strata 1\",\n            \"description\": \"Bachelor's degree in Computer Science\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\",\n            \"created_at\": \"2024-05-05T20:34:40.768Z\",\n            \"updated_at\": \"2024-05-05T21:35:31.652Z\"\n        },\n        {\n            \"id\": 17,\n            \"employee_id\": 22,\n            \"name\": \"University of Examplee\",\n            \"level\": \"Strata 1\",\n            \"description\": \"Bachelor's degree in Computer Science\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\",\n            \"created_at\": \"2024-05-05T23:21:58.428Z\",\n            \"updated_at\": \"2024-05-05T23:26:22.755Z\"\n        },\n        {\n            \"id\": 18,\n            \"employee_id\": 22,\n            \"name\": \"University of Examplee2\",\n            \"level\": \"Strata 1\",\n            \"description\": \"Bachelor's degree in Computer Science\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\",\n            \"created_at\": \"2024-05-05T23:21:58.432Z\",\n            \"updated_at\": \"2024-05-05T23:26:22.759Z\"\n        },\n        {\n            \"id\": 21,\n            \"employee_id\": 22,\n            \"name\": \"SMAN 1 Yogyakarta\",\n            \"level\": \"Sma\",\n            \"description\": \"SMAN 1 Yogyakarta\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"\",\n            \"created_at\": \"2024-05-05T23:33:14.761Z\",\n            \"updated_at\": \"2024-05-05T23:33:14.761Z\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "not found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/education?employee_id=100",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"education"
+									],
+									"query": [
+										{
+											"key": "employee_id",
+											"value": "100"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "55"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"37-AVMmhiYMwfVs0lVK1FIrLBGpeTw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 May 2024 23:34:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 404,\n    \"message\": \"Employee not found\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "getEducationById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/education/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"education",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/education/1",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"education",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "277"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"115-/Rs20SAYmfjiGbgA89RcsQOUSOs\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 May 2024 23:35:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"Get Education Success\",\n    \"data\": {\n        \"id\": 1,\n        \"employee_id\": 1,\n        \"name\": \"SMKN 7 Jakartaa\",\n        \"level\": \"Sma\",\n        \"description\": \"Sekolah Menengah Atas\",\n        \"created_by\": \"admin\",\n        \"updated_by\": \"admin\",\n        \"created_at\": \"2022-12-11T17:00:00.000Z\",\n        \"updated_at\": \"2024-05-05T18:55:21.777Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "updateEducation",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employee_id\": 1,\r\n    \"name\": \"SMKN 7 Jakarta\",\r\n    \"level\": \"Sma\",\r\n    \"description\": \"Sekolah Menengah Atas\",\r\n    \"updated_by\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/education/100",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"education",
+								"100"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"employee_id\": 1,\r\n    \"name\": \"SMKN 7 Jakarta\",\r\n    \"level\": \"Sma\",\r\n    \"description\": \"Sekolah Menengah Atas\",\r\n    \"updated_by\": \"admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/education/1",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"education",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "285"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"11d-K6RtfpWI+asnzpDs27tuHKBHtJk\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 May 2024 23:36:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"Education updated successfully\",\n    \"data\": {\n        \"id\": 1,\n        \"employee_id\": 1,\n        \"name\": \"SMKN 7 Jakarta\",\n        \"level\": \"Sma\",\n        \"description\": \"Sekolah Menengah Atas\",\n        \"created_by\": \"admin\",\n        \"updated_by\": \"admin\",\n        \"created_at\": \"2022-12-11T17:00:00.000Z\",\n        \"updated_at\": \"2024-05-05T23:36:26.280Z\"\n    }\n}"
+						},
+						{
+							"name": "not found",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"employee_id\": 1,\r\n    \"name\": \"SMKN 7 Jakarta\",\r\n    \"level\": \"Sma\",\r\n    \"description\": \"Sekolah Menengah Atas\",\r\n    \"updated_by\": \"admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/education/100",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"education",
+										"100"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "56"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"38-olikQN/2Yt51WjZjqkiwsL5KHfU\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 May 2024 23:36:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 404,\n    \"message\": \"Education not found\",\n    \"data\": null\n}"
+						},
+						{
+							"name": "employee not found",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"employee_id\": 11,\r\n    \"name\": \"SMKN 7 Jakarta\",\r\n    \"level\": \"Sma\",\r\n    \"description\": \"Sekolah Menengah Atas\",\r\n    \"updated_by\": \"admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/education/100",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"education",
+										"100"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "55"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"37-AVMmhiYMwfVs0lVK1FIrLBGpeTw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 May 2024 23:37:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 404,\n    \"message\": \"Employee not found\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteEducation",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/education/21",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"education",
+								"21"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "not found",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/education/100",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"education",
+										"100"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "56"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"38-olikQN/2Yt51WjZjqkiwsL5KHfU\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 May 2024 23:37:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 404,\n    \"message\": \"Education not found\",\n    \"data\": null\n}"
+						},
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/education/21",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"education",
+										"21"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "67"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"43-XJwH+py/tltyGsVIxMtliUdJgQ4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 May 2024 23:38:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"Education deleted successfully\",\n    \"data\": null\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Profile",
+			"item": [
+				{
+					"name": "createProfile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employee_id\": \"22\",\r\n    \"place_of_birth\": \"Sleman\",\r\n    \"date_of_birth\": \"1990-01-01\",\r\n    \"gender\": \"Perempuan\",\r\n    \"is_married\": true,\r\n    \"prof_pict\": \"\",\r\n    \"created_by\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/profile",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"profile"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"employee_id\": \"1\",\r\n    \"place_of_birth\": \"Sleman\",\r\n    \"date_of_birth\": \"2001-15-21\",\r\n    \"gender\": \"Perempuan\",\r\n    \"is_married\": true,\r\n    \"prof_pict\": \"\",\r\n    \"created_by\": \"admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/profile",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"profile"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "63"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3f-sPOzSy2+0wTDhKDefjDJYuljjBs\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 May 2024 23:49:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 201,\n    \"message\": \"Profile created successfully\",\n    \"data\": {}\n}"
+						},
+						{
+							"name": "not found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"employee_id\": \"100\",\r\n    \"place_of_birth\": \"Sleman\",\r\n    \"date_of_birth\": \"1990-01-01\",\r\n    \"gender\": \"Perempuan\",\r\n    \"is_married\": true,\r\n    \"prof_pict\": \"\",\r\n    \"created_by\": \"admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/profile",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"profile"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "55"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"37-AVMmhiYMwfVs0lVK1FIrLBGpeTw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 May 2024 23:51:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 404,\n    \"message\": \"Employee not found\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "getAllProfile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/profile",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"profile"
+							],
+							"query": [
+								{
+									"key": "employee_id",
+									"value": "2",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get by employee_id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/profile?employee_id=2",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"profile"
+									],
+									"query": [
+										{
+											"key": "employee_id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "331"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"14b-lnztUQGhz2Xk3CCoQp+eG+hlkFY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 May 2024 23:54:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"Get Profile Success\",\n    \"data\": [\n        {\n            \"id\": 2,\n            \"employee_id\": 2,\n            \"place_of_birth\": \"Sukabumi\",\n            \"date_of_birth\": \"1996-05-01T17:00:00.000Z\",\n            \"gender\": \"Perempuan\",\n            \"is_married\": false,\n            \"prof_pict\": \"admin\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\",\n            \"created_at\": \"2022-12-11T17:00:00.000Z\",\n            \"updated_at\": \"2022-12-11T17:00:00.000Z\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "not found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/profile?employee_id=200",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"profile"
+									],
+									"query": [
+										{
+											"key": "employee_id",
+											"value": "200"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "55"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"37-AVMmhiYMwfVs0lVK1FIrLBGpeTw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 May 2024 23:55:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 404,\n    \"message\": \"Employee not found\",\n    \"data\": null\n}"
+						},
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/profile",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"profile"
+									],
+									"query": [
+										{
+											"key": "employee_id",
+											"value": "2",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "4918"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1336-FZjwmPvL6kNWJyO6BNyrIrTKgdI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 May 2024 23:55:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"Get Profile Success\",\n    \"data\": [\n        {\n            \"id\": 3,\n            \"employee_id\": 4,\n            \"place_of_birth\": \"Jakarta\",\n            \"date_of_birth\": \"1990-01-01T00:00:00.000Z\",\n            \"gender\": \"Laki-Laki\",\n            \"is_married\": null,\n            \"prof_pict\": \"\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-05T17:20:17.552Z\",\n            \"updated_at\": \"2024-05-05T17:20:17.552Z\"\n        },\n        {\n            \"id\": 4,\n            \"employee_id\": 5,\n            \"place_of_birth\": \"Jakarta\",\n            \"date_of_birth\": \"1990-01-01T00:00:00.000Z\",\n            \"gender\": \"Laki-Laki\",\n            \"is_married\": null,\n            \"prof_pict\": \"\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-05T17:22:52.281Z\",\n            \"updated_at\": \"2024-05-05T17:22:52.281Z\"\n        },\n        {\n            \"id\": 5,\n            \"employee_id\": 6,\n            \"place_of_birth\": \"Jakarta\",\n            \"date_of_birth\": \"1990-01-01T00:00:00.000Z\",\n            \"gender\": \"Laki-Laki\",\n            \"is_married\": null,\n            \"prof_pict\": \"\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-05T17:23:51.156Z\",\n            \"updated_at\": \"2024-05-05T17:23:51.156Z\"\n        },\n        {\n            \"id\": 6,\n            \"employee_id\": 8,\n            \"place_of_birth\": \"Jakarta\",\n            \"date_of_birth\": \"1990-01-01T00:00:00.000Z\",\n            \"gender\": \"Laki-Laki\",\n            \"is_married\": null,\n            \"prof_pict\": \"\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-05T17:24:51.369Z\",\n            \"updated_at\": \"2024-05-05T17:24:51.369Z\"\n        },\n        {\n            \"id\": 7,\n            \"employee_id\": 9,\n            \"place_of_birth\": \"Jakarta\",\n            \"date_of_birth\": \"1990-01-01T00:00:00.000Z\",\n            \"gender\": \"Laki-Laki\",\n            \"is_married\": true,\n            \"prof_pict\": \"\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-05T17:25:42.557Z\",\n            \"updated_at\": \"2024-05-05T17:25:42.557Z\"\n        },\n        {\n            \"id\": 8,\n            \"employee_id\": 10,\n            \"place_of_birth\": \"Jakarta\",\n            \"date_of_birth\": \"1990-01-01T00:00:00.000Z\",\n            \"gender\": \"Laki-Laki\",\n            \"is_married\": true,\n            \"prof_pict\": \"\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-05T17:26:24.327Z\",\n            \"updated_at\": \"2024-05-05T17:26:24.327Z\"\n        },\n        {\n            \"id\": 9,\n            \"employee_id\": 11,\n            \"place_of_birth\": \"Jakarta\",\n            \"date_of_birth\": \"1990-01-01T00:00:00.000Z\",\n            \"gender\": \"Laki-Laki\",\n            \"is_married\": true,\n            \"prof_pict\": \"\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-05T17:27:44.862Z\",\n            \"updated_at\": \"2024-05-05T17:27:44.862Z\"\n        },\n        {\n            \"id\": 10,\n            \"employee_id\": 12,\n            \"place_of_birth\": \"Jakarta\",\n            \"date_of_birth\": \"1990-01-01T00:00:00.000Z\",\n            \"gender\": \"Laki-Laki\",\n            \"is_married\": true,\n            \"prof_pict\": \"\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-05T17:28:33.353Z\",\n            \"updated_at\": \"2024-05-05T17:28:33.353Z\"\n        },\n        {\n            \"id\": 11,\n            \"employee_id\": 13,\n            \"place_of_birth\": \"Jakarta\",\n            \"date_of_birth\": \"1990-01-01T00:00:00.000Z\",\n            \"gender\": \"Laki-Laki\",\n            \"is_married\": true,\n            \"prof_pict\": \"\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-05T17:30:56.991Z\",\n            \"updated_at\": \"2024-05-05T17:30:56.991Z\"\n        },\n        {\n            \"id\": 12,\n            \"employee_id\": 16,\n            \"place_of_birth\": \"Jakarta\",\n            \"date_of_birth\": \"1990-01-01T00:00:00.000Z\",\n            \"gender\": \"Laki-Laki\",\n            \"is_married\": true,\n            \"prof_pict\": \"\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-05T17:35:17.655Z\",\n            \"updated_at\": \"2024-05-05T17:35:17.655Z\"\n        },\n        {\n            \"id\": 13,\n            \"employee_id\": 17,\n            \"place_of_birth\": \"Jakarta\",\n            \"date_of_birth\": \"1990-01-01T00:00:00.000Z\",\n            \"gender\": \"Laki-Laki\",\n            \"is_married\": true,\n            \"prof_pict\": \"\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-05T17:39:54.996Z\",\n            \"updated_at\": \"2024-05-05T17:39:54.996Z\"\n        },\n        {\n            \"id\": 14,\n            \"employee_id\": 18,\n            \"place_of_birth\": \"Jakarta\",\n            \"date_of_birth\": \"1990-01-01T00:00:00.000Z\",\n            \"gender\": \"Laki-Laki\",\n            \"is_married\": true,\n            \"prof_pict\": \"\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-05T17:49:48.870Z\",\n            \"updated_at\": \"2024-05-05T17:49:48.870Z\"\n        },\n        {\n            \"id\": 17,\n            \"employee_id\": 21,\n            \"place_of_birth\": \"Jakarta\",\n            \"date_of_birth\": \"1990-01-01T00:00:00.000Z\",\n            \"gender\": \"Laki-Laki\",\n            \"is_married\": true,\n            \"prof_pict\": \"\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\",\n            \"created_at\": \"2024-05-05T20:34:40.722Z\",\n            \"updated_at\": \"2024-05-05T21:35:31.614Z\"\n        },\n        {\n            \"id\": 1,\n            \"employee_id\": 1,\n            \"place_of_birth\": \"Jakarta\",\n            \"date_of_birth\": \"1997-05-01T17:00:00.000Z\",\n            \"gender\": \"Perempuan\",\n            \"is_married\": true,\n            \"prof_pict\": \"admin\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\",\n            \"created_at\": \"2022-12-11T17:00:00.000Z\",\n            \"updated_at\": \"2022-12-11T17:00:00.000Z\"\n        },\n        {\n            \"id\": 2,\n            \"employee_id\": 2,\n            \"place_of_birth\": \"Sukabumi\",\n            \"date_of_birth\": \"1996-05-01T17:00:00.000Z\",\n            \"gender\": \"Perempuan\",\n            \"is_married\": false,\n            \"prof_pict\": \"admin\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\",\n            \"created_at\": \"2022-12-11T17:00:00.000Z\",\n            \"updated_at\": \"2022-12-11T17:00:00.000Z\"\n        },\n        {\n            \"id\": 18,\n            \"employee_id\": 22,\n            \"place_of_birth\": \"Jakarta\",\n            \"date_of_birth\": \"1990-01-01T00:00:00.000Z\",\n            \"gender\": \"Laki-Laki\",\n            \"is_married\": true,\n            \"prof_pict\": \"\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\",\n            \"created_at\": \"2024-05-05T23:21:58.400Z\",\n            \"updated_at\": \"2024-05-05T23:26:22.743Z\"\n        },\n        {\n            \"id\": 20,\n            \"employee_id\": 1,\n            \"place_of_birth\": \"Sleman\",\n            \"date_of_birth\": \"1990-01-01T00:00:00.000Z\",\n            \"gender\": \"Perempuan\",\n            \"is_married\": true,\n            \"prof_pict\": \"\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-05T23:51:24.150Z\",\n            \"updated_at\": \"2024-05-05T23:51:24.150Z\"\n        },\n        {\n            \"id\": 21,\n            \"employee_id\": 22,\n            \"place_of_birth\": \"Sleman\",\n            \"date_of_birth\": \"1990-01-01T00:00:00.000Z\",\n            \"gender\": \"Perempuan\",\n            \"is_married\": true,\n            \"prof_pict\": \"\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-05T23:52:57.431Z\",\n            \"updated_at\": \"2024-05-05T23:52:57.431Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "getProfileById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/profile/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"profile",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/profile/1",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"profile",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "327"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"147-QUzAyt2pMnlAyciztPNGGY/hBho\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 May 2024 23:57:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"Get Profile Success\",\n    \"data\": {\n        \"id\": 1,\n        \"employee_id\": 1,\n        \"place_of_birth\": \"Jakarta\",\n        \"date_of_birth\": \"1997-05-01T17:00:00.000Z\",\n        \"gender\": \"Perempuan\",\n        \"is_married\": true,\n        \"prof_pict\": \"admin\",\n        \"created_by\": \"admin\",\n        \"updated_by\": \"admin\",\n        \"created_at\": \"2022-12-11T17:00:00.000Z\",\n        \"updated_at\": \"2022-12-11T17:00:00.000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "updateProfile",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employee_id\": \"22\",\r\n    \"place_of_birth\": \"Sleman\",\r\n    \"date_of_birth\": \"1990-01-01\",\r\n    \"gender\": \"Perempuan\",\r\n    \"is_married\": true,\r\n    \"prof_pict\": \"\",\r\n    \"updated_by\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/profile/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"profile",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "profile not found",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"employee_id\": \"22\",\r\n    \"place_of_birth\": \"Sleman\",\r\n    \"date_of_birth\": \"1990-01-01\",\r\n    \"gender\": \"Perempuan\",\r\n    \"is_married\": true,\r\n    \"prof_pict\": \"\",\r\n    \"updated_by\": \"admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/profile/100",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"profile",
+										"100"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "54"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"36-eLoaCRcZxl7XwSPLXhv27EYoNrE\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 May 2024 23:59:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 404,\n    \"message\": \"Profile not found\",\n    \"data\": null\n}"
+						},
+						{
+							"name": "employee not found",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"employee_id\": \"220\",\r\n    \"place_of_birth\": \"Sleman\",\r\n    \"date_of_birth\": \"1990-01-01\",\r\n    \"gender\": \"Perempuan\",\r\n    \"is_married\": true,\r\n    \"prof_pict\": \"\",\r\n    \"updated_by\": \"admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/profile/1",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"profile",
+										"1"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "55"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"37-AVMmhiYMwfVs0lVK1FIrLBGpeTw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 May 2024 23:59:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 404,\n    \"message\": \"Employee not found\",\n    \"data\": null\n}"
+						},
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"employee_id\": \"22\",\r\n    \"place_of_birth\": \"Sleman\",\r\n    \"date_of_birth\": \"1990-01-01\",\r\n    \"gender\": \"Perempuan\",\r\n    \"is_married\": true,\r\n    \"prof_pict\": \"\",\r\n    \"updated_by\": \"admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/profile/1",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"profile",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "333"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"14d-NBCK44Zg0qFGMWjmv+hSnYbFye0\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 06 May 2024 00:00:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"Profile updated successfully\",\n    \"data\": {\n        \"id\": 1,\n        \"employee_id\": \"22\",\n        \"place_of_birth\": \"Sleman\",\n        \"date_of_birth\": \"1990-01-01T00:00:00.000Z\",\n        \"gender\": \"Perempuan\",\n        \"is_married\": true,\n        \"prof_pict\": \"\",\n        \"created_by\": \"admin\",\n        \"updated_by\": \"admin\",\n        \"created_at\": \"2022-12-11T17:00:00.000Z\",\n        \"updated_at\": \"2024-05-06T00:00:13.708Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteProfile",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/education/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"education",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "not found",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/education/4",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"education",
+										"4"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "56"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"38-olikQN/2Yt51WjZjqkiwsL5KHfU\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 06 May 2024 00:05:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 404,\n    \"message\": \"Education not found\",\n    \"data\": null\n}"
+						},
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/education/1",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"education",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "67"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"43-XJwH+py/tltyGsVIxMtliUdJgQ4\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 06 May 2024 00:05:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"Education deleted successfully\",\n    \"data\": null\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Family",
+			"item": [
+				{
+					"name": "createFamily",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employee_id\": \"1\",\r\n    \"name\": \"Falan\",\r\n    \"identifier\": \"12345\",\r\n    \"job\": \"Student\",\r\n    \"place_of_birth\": \"Surabaya\",\r\n    \"date_of_birth\": \"2002-12-5\",\r\n    \"religion\": \"Islam\",\r\n    \"is_life\": true,\r\n    \"is_divorced\": false,\r\n    \"relation_status\": \"Anak Sambung\",\r\n    \"created_by\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/family",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"family"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"employee_id\": \"1\",\r\n    \"name\": \"Falan\",\r\n    \"identifier\": \"12345\",\r\n    \"job\": \"Student\",\r\n    \"place_of_birth\": \"Surabaya\",\r\n    \"date_of_birth\": \"2002-12-5\",\r\n    \"religion\": \"Islam\",\r\n    \"is_life\": true,\r\n    \"is_divorced\": false,\r\n    \"relation_status\": \"Anak Sambung\",\r\n    \"created_by\": \"admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/family",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"family"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "62"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3e-WhSzQva36FNZJWHYgdj+DWvIKRc\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 06 May 2024 00:12:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 201,\n    \"message\": \"Family created successfully\",\n    \"data\": {}\n}"
+						},
+						{
+							"name": "employee not found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"employee_id\": \"100\",\r\n    \"name\": \"Falan\",\r\n    \"identifier\": \"12345\",\r\n    \"job\": \"Student\",\r\n    \"place_of_birth\": \"Surabaya\",\r\n    \"date_of_birth\": \"2002-12-5\",\r\n    \"religion\": \"Islam\",\r\n    \"is_life\": true,\r\n    \"is_divorced\": false,\r\n    \"relation_status\": \"Anak Sambung\",\r\n    \"created_by\": \"admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/family",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"family"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "55"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"37-AVMmhiYMwfVs0lVK1FIrLBGpeTw\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 06 May 2024 00:14:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 404,\n    \"message\": \"Employee not found\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "getAllFamily",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/family",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"family"
+							],
+							"query": [
+								{
+									"key": "employee_id",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getAll",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/family",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"family"
+									],
+									"query": [
+										{
+											"key": "employee_id",
+											"value": "2",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "6802"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a92-H8Us4XqSCds2KWCYeDdOkMjs2gE\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 06 May 2024 00:15:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"Get Family Success\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"employee_id\": 1,\n            \"name\": \"Marni\",\n            \"identifier\": \"32100594109960002\",\n            \"job\": \"Ibu Rumah Tangga\",\n            \"place_of_birth\": \"Denpasar\",\n            \"date_of_birth\": \"1995-10-16T17:00:00.000Z\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": false,\n            \"relation_status\": \"Istri\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\",\n            \"created_at\": \"2022-12-11T17:00:00.000Z\",\n            \"updated_at\": \"2022-12-11T17:00:00.000Z\"\n        },\n        {\n            \"id\": 2,\n            \"employee_id\": 1,\n            \"name\": \"Clara\",\n            \"identifier\": \"32100594109020004\",\n            \"job\": \"Pelajar\",\n            \"place_of_birth\": \"Bangkalan\",\n            \"date_of_birth\": \"2008-10-16T17:00:00.000Z\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": false,\n            \"relation_status\": \"Anak\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\",\n            \"created_at\": \"2022-12-11T17:00:00.000Z\",\n            \"updated_at\": \"2022-12-11T17:00:00.000Z\"\n        },\n        {\n            \"id\": 3,\n            \"employee_id\": 1,\n            \"name\": \"Stephanie\",\n            \"identifier\": \"32100594109020005\",\n            \"job\": \"Pelajar\",\n            \"place_of_birth\": \"Bangkalan\",\n            \"date_of_birth\": \"2008-10-16T17:00:00.000Z\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": false,\n            \"relation_status\": \"Anak\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\",\n            \"created_at\": \"2022-12-11T17:00:00.000Z\",\n            \"updated_at\": \"2022-12-11T17:00:00.000Z\"\n        },\n        {\n            \"id\": 4,\n            \"employee_id\": 11,\n            \"name\": \"Jane Doe\",\n            \"identifier\": \"12345\",\n            \"job\": \"Pelajar\",\n            \"place_of_birth\": \"Denpasar\",\n            \"date_of_birth\": \"1995-10-17T00:00:00.000Z\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": false,\n            \"relation_status\": \"Istri\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-05T17:27:44.873Z\",\n            \"updated_at\": \"2024-05-05T17:27:44.873Z\"\n        },\n        {\n            \"id\": 5,\n            \"employee_id\": 12,\n            \"name\": \"Jane Doe\",\n            \"identifier\": \"12345\",\n            \"job\": \"Pelajar\",\n            \"place_of_birth\": \"Denpasar\",\n            \"date_of_birth\": \"1995-10-17T00:00:00.000Z\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": false,\n            \"relation_status\": \"Istri\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-05T17:28:33.360Z\",\n            \"updated_at\": \"2024-05-05T17:28:33.360Z\"\n        },\n        {\n            \"id\": 6,\n            \"employee_id\": 12,\n            \"name\": \"Jane Doe\",\n            \"identifier\": \"123456\",\n            \"job\": \"Pelajar\",\n            \"place_of_birth\": \"Denpasar\",\n            \"date_of_birth\": \"1995-10-17T00:00:00.000Z\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": false,\n            \"relation_status\": \"Anak\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-05T17:28:33.366Z\",\n            \"updated_at\": \"2024-05-05T17:28:33.366Z\"\n        },\n        {\n            \"id\": 7,\n            \"employee_id\": 13,\n            \"name\": \"Jane Doe\",\n            \"identifier\": \"12345\",\n            \"job\": \"Pelajar\",\n            \"place_of_birth\": \"Denpasar\",\n            \"date_of_birth\": \"1995-10-17T00:00:00.000Z\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": false,\n            \"relation_status\": \"Istri\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-05T17:30:56.999Z\",\n            \"updated_at\": \"2024-05-05T17:30:56.999Z\"\n        },\n        {\n            \"id\": 8,\n            \"employee_id\": 13,\n            \"name\": \"Jane Doe\",\n            \"identifier\": \"123456\",\n            \"job\": \"Pelajar\",\n            \"place_of_birth\": \"Denpasar\",\n            \"date_of_birth\": \"1995-10-17T00:00:00.000Z\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": false,\n            \"relation_status\": \"Anak\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-05T17:30:57.009Z\",\n            \"updated_at\": \"2024-05-05T17:30:57.009Z\"\n        },\n        {\n            \"id\": 9,\n            \"employee_id\": 17,\n            \"name\": \"Jane Doe\",\n            \"identifier\": \"12345\",\n            \"job\": \"Pelajar\",\n            \"place_of_birth\": \"Denpasar\",\n            \"date_of_birth\": \"1995-10-17T00:00:00.000Z\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": false,\n            \"relation_status\": \"Istri\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-05T17:39:55.006Z\",\n            \"updated_at\": \"2024-05-05T17:39:55.006Z\"\n        },\n        {\n            \"id\": 10,\n            \"employee_id\": 17,\n            \"name\": \"Jane Doe\",\n            \"identifier\": \"123456\",\n            \"job\": \"Pelajar\",\n            \"place_of_birth\": \"Denpasar\",\n            \"date_of_birth\": \"1995-10-17T00:00:00.000Z\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": false,\n            \"relation_status\": \"Anak\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-05T17:39:55.015Z\",\n            \"updated_at\": \"2024-05-05T17:39:55.015Z\"\n        },\n        {\n            \"id\": 11,\n            \"employee_id\": 18,\n            \"name\": \"Jane Doe\",\n            \"identifier\": \"12345\",\n            \"job\": \"Pelajar\",\n            \"place_of_birth\": \"Denpasar\",\n            \"date_of_birth\": \"1995-10-17T00:00:00.000Z\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": false,\n            \"relation_status\": \"Istri\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-05T17:49:48.908Z\",\n            \"updated_at\": \"2024-05-05T17:49:48.908Z\"\n        },\n        {\n            \"id\": 12,\n            \"employee_id\": 18,\n            \"name\": \"Jane Doe\",\n            \"identifier\": \"123456\",\n            \"job\": \"Pelajar\",\n            \"place_of_birth\": \"Denpasar\",\n            \"date_of_birth\": \"1995-10-17T00:00:00.000Z\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": false,\n            \"relation_status\": \"Anak\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-05T17:49:48.920Z\",\n            \"updated_at\": \"2024-05-05T17:49:48.920Z\"\n        },\n        {\n            \"id\": 17,\n            \"employee_id\": 21,\n            \"name\": \"Jane Doee\",\n            \"identifier\": \"12345\",\n            \"job\": \"Pelajar\",\n            \"place_of_birth\": \"Denpasar\",\n            \"date_of_birth\": \"1995-10-17T00:00:00.000Z\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": false,\n            \"relation_status\": \"Istri\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\",\n            \"created_at\": \"2024-05-05T20:34:40.738Z\",\n            \"updated_at\": \"2024-05-05T21:35:31.636Z\"\n        },\n        {\n            \"id\": 18,\n            \"employee_id\": 21,\n            \"name\": \"June Doee\",\n            \"identifier\": \"123456\",\n            \"job\": \"Pelajar\",\n            \"place_of_birth\": \"Denpasar\",\n            \"date_of_birth\": \"2012-10-17T00:00:00.000Z\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": false,\n            \"relation_status\": \"Anak\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\",\n            \"created_at\": \"2024-05-05T20:34:40.750Z\",\n            \"updated_at\": \"2024-05-05T21:35:31.642Z\"\n        },\n        {\n            \"id\": 19,\n            \"employee_id\": 22,\n            \"name\": \"Jane Doee\",\n            \"identifier\": \"12345\",\n            \"job\": \"Pelajar\",\n            \"place_of_birth\": \"Denpasar\",\n            \"date_of_birth\": \"1995-10-17T00:00:00.000Z\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": false,\n            \"relation_status\": \"Istri\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\",\n            \"created_at\": \"2024-05-05T23:21:58.407Z\",\n            \"updated_at\": \"2024-05-05T23:26:22.748Z\"\n        },\n        {\n            \"id\": 20,\n            \"employee_id\": 22,\n            \"name\": \"June Doee\",\n            \"identifier\": \"123456\",\n            \"job\": \"Pelajar\",\n            \"place_of_birth\": \"Denpasar\",\n            \"date_of_birth\": \"2012-10-17T00:00:00.000Z\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": false,\n            \"relation_status\": \"Anak\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\",\n            \"created_at\": \"2024-05-05T23:21:58.417Z\",\n            \"updated_at\": \"2024-05-05T23:26:22.751Z\"\n        },\n        {\n            \"id\": 23,\n            \"employee_id\": 1,\n            \"name\": \"Falan\",\n            \"identifier\": \"12345\",\n            \"job\": \"Student\",\n            \"place_of_birth\": \"Surabaya\",\n            \"date_of_birth\": \"2002-12-04T17:00:00.000Z\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": false,\n            \"relation_status\": \"Anak Sambung\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-06T00:09:52.424Z\",\n            \"updated_at\": \"2024-05-06T00:09:52.424Z\"\n        },\n        {\n            \"id\": 24,\n            \"employee_id\": 1,\n            \"name\": \"Falan\",\n            \"identifier\": \"12345\",\n            \"job\": \"Student\",\n            \"place_of_birth\": \"Surabaya\",\n            \"date_of_birth\": \"2002-12-04T17:00:00.000Z\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": false,\n            \"relation_status\": \"Anak Sambung\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-06T00:10:27.539Z\",\n            \"updated_at\": \"2024-05-06T00:10:27.539Z\"\n        },\n        {\n            \"id\": 25,\n            \"employee_id\": 1,\n            \"name\": \"Falan\",\n            \"identifier\": \"12345\",\n            \"job\": \"Student\",\n            \"place_of_birth\": \"Surabaya\",\n            \"date_of_birth\": \"2002-12-04T17:00:00.000Z\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": false,\n            \"relation_status\": \"Anak Sambung\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-06T00:12:22.713Z\",\n            \"updated_at\": \"2024-05-06T00:12:22.713Z\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "get by employee id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/family?employee_id=1",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"family"
+									],
+									"query": [
+										{
+											"key": "employee_id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2216"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"8a8-gv1ADNWnwXJfBWnPt8t9lEqTw2I\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 06 May 2024 00:15:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"Get Family Success\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"employee_id\": 1,\n            \"name\": \"Marni\",\n            \"identifier\": \"32100594109960002\",\n            \"job\": \"Ibu Rumah Tangga\",\n            \"place_of_birth\": \"Denpasar\",\n            \"date_of_birth\": \"1995-10-16T17:00:00.000Z\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": false,\n            \"relation_status\": \"Istri\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\",\n            \"created_at\": \"2022-12-11T17:00:00.000Z\",\n            \"updated_at\": \"2022-12-11T17:00:00.000Z\"\n        },\n        {\n            \"id\": 2,\n            \"employee_id\": 1,\n            \"name\": \"Clara\",\n            \"identifier\": \"32100594109020004\",\n            \"job\": \"Pelajar\",\n            \"place_of_birth\": \"Bangkalan\",\n            \"date_of_birth\": \"2008-10-16T17:00:00.000Z\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": false,\n            \"relation_status\": \"Anak\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\",\n            \"created_at\": \"2022-12-11T17:00:00.000Z\",\n            \"updated_at\": \"2022-12-11T17:00:00.000Z\"\n        },\n        {\n            \"id\": 3,\n            \"employee_id\": 1,\n            \"name\": \"Stephanie\",\n            \"identifier\": \"32100594109020005\",\n            \"job\": \"Pelajar\",\n            \"place_of_birth\": \"Bangkalan\",\n            \"date_of_birth\": \"2008-10-16T17:00:00.000Z\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": false,\n            \"relation_status\": \"Anak\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\",\n            \"created_at\": \"2022-12-11T17:00:00.000Z\",\n            \"updated_at\": \"2022-12-11T17:00:00.000Z\"\n        },\n        {\n            \"id\": 23,\n            \"employee_id\": 1,\n            \"name\": \"Falan\",\n            \"identifier\": \"12345\",\n            \"job\": \"Student\",\n            \"place_of_birth\": \"Surabaya\",\n            \"date_of_birth\": \"2002-12-04T17:00:00.000Z\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": false,\n            \"relation_status\": \"Anak Sambung\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-06T00:09:52.424Z\",\n            \"updated_at\": \"2024-05-06T00:09:52.424Z\"\n        },\n        {\n            \"id\": 24,\n            \"employee_id\": 1,\n            \"name\": \"Falan\",\n            \"identifier\": \"12345\",\n            \"job\": \"Student\",\n            \"place_of_birth\": \"Surabaya\",\n            \"date_of_birth\": \"2002-12-04T17:00:00.000Z\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": false,\n            \"relation_status\": \"Anak Sambung\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-06T00:10:27.539Z\",\n            \"updated_at\": \"2024-05-06T00:10:27.539Z\"\n        },\n        {\n            \"id\": 25,\n            \"employee_id\": 1,\n            \"name\": \"Falan\",\n            \"identifier\": \"12345\",\n            \"job\": \"Student\",\n            \"place_of_birth\": \"Surabaya\",\n            \"date_of_birth\": \"2002-12-04T17:00:00.000Z\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": false,\n            \"relation_status\": \"Anak Sambung\",\n            \"created_by\": \"admin\",\n            \"updated_by\": null,\n            \"created_at\": \"2024-05-06T00:12:22.713Z\",\n            \"updated_at\": \"2024-05-06T00:12:22.713Z\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "employee not found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/family?employee_id=100",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"family"
+									],
+									"query": [
+										{
+											"key": "employee_id",
+											"value": "100"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "55"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"37-AVMmhiYMwfVs0lVK1FIrLBGpeTw\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 06 May 2024 00:16:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 404,\n    \"message\": \"Employee not found\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "getFamilyById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/family/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"family",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/family/1",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"family",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "421"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a5-odKaRKscWBwnl2qjnbaDOrN/3FI\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 06 May 2024 00:16:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"Get family Success\",\n    \"data\": {\n        \"id\": 1,\n        \"employee_id\": 1,\n        \"name\": \"Marni\",\n        \"identifier\": \"32100594109960002\",\n        \"job\": \"Ibu Rumah Tangga\",\n        \"place_of_birth\": \"Denpasar\",\n        \"date_of_birth\": \"1995-10-16T17:00:00.000Z\",\n        \"religion\": \"Islam\",\n        \"is_life\": true,\n        \"is_divorced\": false,\n        \"relation_status\": \"Istri\",\n        \"created_by\": \"admin\",\n        \"updated_by\": \"admin\",\n        \"created_at\": \"2022-12-11T17:00:00.000Z\",\n        \"updated_at\": \"2022-12-11T17:00:00.000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "updateFamily",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employee_id\": \"1\",\r\n    \"name\": \"Falan\",\r\n    \"identifier\": \"12345\",\r\n    \"job\": \"Student\",\r\n    \"place_of_birth\": \"Surabaya\",\r\n    \"date_of_birth\": \"2002-12-5\",\r\n    \"religion\": \"Islam\",\r\n    \"is_life\": true,\r\n    \"is_divorced\": false,\r\n    \"relation_status\": \"Anak Sambung\",\r\n    \"created_by\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/family/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"family",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "family not found",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"employee_id\": \"1\",\r\n    \"name\": \"Falan\",\r\n    \"identifier\": \"12345\",\r\n    \"job\": \"Student\",\r\n    \"place_of_birth\": \"Surabaya\",\r\n    \"date_of_birth\": \"2002-12-5\",\r\n    \"religion\": \"Islam\",\r\n    \"is_life\": true,\r\n    \"is_divorced\": false,\r\n    \"relation_status\": \"Anak Sambung\",\r\n    \"created_by\": \"admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/family/100",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"family",
+										"100"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "53"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"35-6ialfmdcqm4GcTLWJLDaIeHq9S4\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 06 May 2024 00:18:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 404,\n    \"message\": \"Family not found\",\n    \"data\": null\n}"
+						},
+						{
+							"name": "employee not found",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"employee_id\": \"100\",\r\n    \"name\": \"Falan\",\r\n    \"identifier\": \"12345\",\r\n    \"job\": \"Student\",\r\n    \"place_of_birth\": \"Surabaya\",\r\n    \"date_of_birth\": \"2002-12-5\",\r\n    \"religion\": \"Islam\",\r\n    \"is_life\": true,\r\n    \"is_divorced\": false,\r\n    \"relation_status\": \"Anak Sambung\",\r\n    \"created_by\": \"admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/family/1",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"family",
+										"1"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "55"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"37-AVMmhiYMwfVs0lVK1FIrLBGpeTw\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 06 May 2024 00:18:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 404,\n    \"message\": \"Employee not found\",\n    \"data\": null\n}"
+						},
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"employee_id\": \"1\",\r\n    \"name\": \"Falan\",\r\n    \"identifier\": \"12345\",\r\n    \"job\": \"Student\",\r\n    \"place_of_birth\": \"Surabaya\",\r\n    \"date_of_birth\": \"2002-12-5\",\r\n    \"religion\": \"Islam\",\r\n    \"is_life\": true,\r\n    \"is_divorced\": false,\r\n    \"relation_status\": \"Anak Sambung\",\r\n    \"created_by\": \"admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/family/1",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"family",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "418"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a2-Kf+P0Aun3B+hSqCFeMkkJRBJsj0\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 06 May 2024 00:18:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"Family updated successfully\",\n    \"data\": {\n        \"id\": 1,\n        \"employee_id\": \"1\",\n        \"name\": \"Falan\",\n        \"identifier\": \"12345\",\n        \"job\": \"Student\",\n        \"place_of_birth\": \"Surabaya\",\n        \"date_of_birth\": \"2002-12-04T17:00:00.000Z\",\n        \"religion\": \"Islam\",\n        \"is_life\": true,\n        \"is_divorced\": false,\n        \"relation_status\": \"Anak Sambung\",\n        \"created_by\": \"admin\",\n        \"updated_by\": \"admin\",\n        \"created_at\": \"2022-12-11T17:00:00.000Z\",\n        \"updated_at\": \"2024-05-06T00:18:32.485Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteFamily",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/family/12",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"family",
+								"12"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "not found",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/family/100",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"family",
+										"100"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "53"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"35-6ialfmdcqm4GcTLWJLDaIeHq9S4\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 06 May 2024 00:19:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 404,\n    \"message\": \"Family not found\",\n    \"data\": null\n}"
+						},
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/family/12",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"family",
+										"12"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "64"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"40-54ubi+7jLcCqyJbEuh1tZyAtutY\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 06 May 2024 00:19:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"Family deleted successfully\",\n    \"data\": null\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
